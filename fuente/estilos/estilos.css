@@ -13,3 +13,23 @@
 .scroll-snap-align {
     scroll-snap-align: start;
 }
+
+.top-mod{
+    top: 48%;
+}
+
+.height-5{
+    height: 15%;
+}
+
+.custom-gap-10{
+    gap:10px;
+}
+
+.custom-l{
+    left: 90px;
+}
+
+.custom-r{
+    right: 90px;
+}

@@ -4,10 +4,20 @@ module.exports = {
   theme: {
     extend: {
       gridAutoColumns: {
-        'custom': 'calc((100% / 4) - 16px)',
+        'xl': 'calc((100% / 4) - 16px)',
+        'g': 'calc((100% / 3) - 7px)',
+        'm': "calc((100% / 2) - 5px)",
+        'p': "calc((100% / 1))"
       },
-    },
-    plugins: [],
+      screens: {
+        'xg': '1200px',
+        's': '550px',
+        'lx': '1160px',
+        'sg': '800px',
+        'smd': '690px',
+        'mini': '350px',
+      },
+      plugins: [],
+    }
   }
 }
-
