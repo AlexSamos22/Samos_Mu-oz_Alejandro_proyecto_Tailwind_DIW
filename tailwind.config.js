@@ -2,8 +2,12 @@
 module.exports = {
   content: ["./fuente/**/*.{html,js}"],
   theme: {
-    extend: {},
-  },
-  plugins: [],
+    extend: {
+      gridAutoColumns: {
+        'custom': 'calc((100% / 4) - 16px)',
+      },
+    },
+    plugins: [],
+  }
 }
 

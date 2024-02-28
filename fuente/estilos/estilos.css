@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-snap-x {
+    scroll-snap-type: x mandatory;
+}
+
+.scrollbar-hidden {
+    scrollbar-width: none; /* Oculta el scrollbar en Firefox */
+}
+
+.scroll-snap-align {
+    scroll-snap-align: start;
+}

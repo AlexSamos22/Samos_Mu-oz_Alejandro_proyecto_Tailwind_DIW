@@ -8,6 +8,237 @@
     <script src="../fuente/js/home.js" defer></script>
 </head>
 <body>
-    <p>HOLLLLAAA</p>
+    <nav class="bg-black text-white h-16">
+        <article class="flex justify-between items-center w-11/12 h-full mx-auto">
+
+            <div class="hidden h-full px-0 py-0 cursor-pointer">
+                <img src="../fuente/iconos/menuPequeño.svg" class="block w-9">
+            </div>
+
+            <div class="text-center">
+                <a class="text-white no-underline" href="../fuente/index.html">
+                    <img class="w-24" src="../fuente/img/logo.png" alt="">
+                    <h1 class="font-light">Game Pulse</h1>
+                </a>
+            </div>
+
+            <ul class="flex transition-transform duration-500 font-bold h-full justify-center items-center">
+                <li id="ordenadores" class="flex items-center  list-none relative h-full">
+                    <a href="" class="text-white no-underline px-8 h-full hover:bg-blue-600 flex justify-center items-center">Ordenadores</a>
+                </li>
+
+                <li id="consolas" class="flex items-center  list-none relative h-full ">
+                    <a href="" class="text-white no-underline px-8 h-full hover:bg-blue-600 flex justify-center items-center">Consolas</a>
+                </li>
+
+                <li id="perifericos" class="flex items-center  list-none relative h-full">
+                    <a href="" class="text-white no-underline px-8 h-full hover:bg-blue-600 flex justify-center items-center">Periféricos</a>
+                </li>
+            </ul>
+
+            <div class="hidden flex flex-col items-center absolute w-2/5 h-full top-16 bottom-0 left-0 z-20 bg-black pt-8">
+                <a  href="" class="block cursor-pointer w-11/12 mb-20 text-center no-underline font-bold bg-blue-600">Ordenadores</a>
+                <a href="" class="block cursor-pointer w-11/12 mb-20 text-center no-underline font-bold bg-blue-600">Consolas</a>
+                <a href="" class="block cursor-pointer w-11/12 mb-20 text-center no-underline font-bold bg-blue-600">Periféricos</a>
+            </div>
+
+            <div class="flex">
+                <a href=""><img class="w-8 m-1 hover:scale-125 transform transition-transform duration-300 ease-in-out" src="../fuente/iconos/perfil.svg" alt=""></a>
+                <a href=""><img class="w-8 m-1 hover:scale-125 transform transition-transform duration-300 ease-in-out" src="../fuente/iconos/carrito.svg" alt=""></a>
+            </div>
+
+        </article>
+    </nav>
+
+    <section class="flex justify-center relative w-full z-0 bg-stone-400">
+        <article class="flex h-auto overflow-hidden w-full" id="carrusel">
+            <div class="absolute top-2/4 -translate-y-12 cursor-pointer z-10 rounded-3xl bg-slate-400 active:scale-110 active:transform left-4" id="izquierda">
+                <img src="../fuente/iconos/flecha-izquierda.svg" alt="flecha-izquierda" class="w-11">
+            </div>
+
+            <div class="imagenes img_1" id="1">
+                <img src="../fuente/img/resident-evil-4.jpg" alt="resident-evil-4">
+            </div>
+
+            <div class="imagenes img_2 hidden" id="2">
+                <img src="../fuente/img/finalFantasy-grande.png" alt="final-fantasy">
+            </div>
+
+            <div class="imagenes img_3 hidden" id="3">
+                <img src="../fuente/img/prince-persia-grande.jpg" alt="Prince-persia">
+            </div>
+
+            <div class="imagenes img_4 hidden" id="4">
+                <img src="../fuente/img/starfield-grande.jpg" alt="Starfield">
+            </div>
+
+            <div class="absolute top-2/4 -translate-y-12 cursor-pointer z-10 rounded-3xl bg-slate-400 active:scale-110 active:transform right-4" id="derecha">
+                <img src="../fuente/iconos/flecha-derecha.svg" alt="flecha-derecha" class="w-11">
+            </div>
+        </article>
+    </section>
+
+    <section class="flex flex-col items-center justify-center bg-stone-400">
+        <article class="w-11/12 relative m-2 mb-6">
+            <h1 class="mb-2 font-bold">Juegos mas premiados</h1>
+            <div id="izquierda" class="flex absolute top-1/2 h-12 cursor-pointer bg-white rounded-3xl shadow-md -translate-y-2/4 active:scale-75 -left-5 flecha">
+                <img src="../fuente/iconos/flecha-izquierda.svg" alt="flecha-izquierda">
+            </div>
+
+            <ul class="grid grid-flow-col auto-cols-custom overflow-x-auto scroll-snap-x gap-5 scroll-smooth scrollbar-hidden">
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/persona-3-reload.jpg" alt="persona-3-reload" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Personal 3 Reload</p>
+                        <p class="m-0 font-bold text-black">60€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/tekken8-2.jpg" alt="tekken8" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Tekken 8</p>
+                        <p class="m-0 font-bold text-black">70€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/cities-skylines.jpg" alt="cities-skylines" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Cities Skylines II</p>
+                        <p class="m-0 font-bold text-black">54€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/elden_Ring.jpg" alt="elden_Ring" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Elden Ring</p>
+                        <p class="m-0 font-bold text-black">60€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/starfield.jpg" alt="Starfield" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Starfield</p>
+                        <p class="m-0 font-bold text-black">50€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/final-fantasy.jpg" alt="final-fantasy" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Final Fantasy XVI</p>
+                        <p class="m-0 font-bold text-black">50€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/devil-may-cry-5.jpg" alt="devil-may-cry-5" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Devil May Cry 5</p>
+                        <p class="m-0 font-bold text-black">35€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/resident-evil-4-2.jpg" alt="resident-evil-4" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Resident Evil 4</p>
+                        <p class="m-0 font-bold text-black">45€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/remnant-2.jpg" alt="remnant-2" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Remnant 2</p>
+                        <p class="m-0 font-bold text-black">25€</p>
+                    </div>
+                </li>
+
+                <li class="scroll-snap-align list-none cursor-pointer w-full">
+                    <div class="text-center">
+                        <a href=""><img src="../fuente/img/prince-persia.jpg" alt="Prince-persia" class="w-full h-auto rounded-xl border-2 border-solid border-black"></a>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="m-0 font-bold text-black">Prince Of Persia</p>
+                        <p class="m-0 font-bold text-black">60€</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="derecha" class="flex absolute top-1/2 h-12 cursor-pointer bg-white rounded-3xl shadow-md -translate-y-2/4 active:scale-75 -right-5 flecha">
+                <img src="../fuente/iconos/flecha-derecha.svg" alt="flecha-derecha">
+            </div>
+
+        </article>
+
+
+    <footer class="bg-black text-white w-full">
+        <section class="flex items-center w-11/12 mx-auto">
+
+            <article class="flex flex-col w-1/4 ml-3">
+                <h1 class="mt-4 font-medium">Informacion Contactos</h1>
+
+                <div class="flex mt-1">
+                    <img src="../fuente/iconos/movil.svg" alt="movil" class="w-9 h-9 mt-2">
+                    <p class="ml-2 mt-4 font-bold">667-89-57-84</p>
+                </div>
+
+                <div class="flex mt-1">
+                    <img src="../fuente/iconos/correo.svg" alt="correo" class="w-9 h-9 mt-2">
+                    <p class="ml-2 mt-4 font-bold">Gamepulse@gmail.com</p>
+                </div>
+            </article>
+
+            <article class="flex flex-col w-1/2 h-28">
+                <h1 class="font-medium">Sobre nosotros</h1>
+                <p class="mt-3 font-bold mb-6">
+                    En Game Pulse, nos apasiona brindarte lo mejor en tecnología y entretenimiento.
+                    Nos dedicamos a ofrecerte una amplia gama de ordenadores, consolas, juegos y
+                    periféricos de calidad superior.
+                </p>
+            </article>
+
+            <article class="flex flex-col items-end w-1/4 mr-2 ">
+                <h1 class="mb-2 font-medium">Redes Sociales</h1>
+                <div class="flex">
+                    <div class="flex mt-2 m-1">
+                        <a href=""><img src="../fuente/iconos/instagram.svg" alt="instagram" class="w-9 h-9 mb-9 hover:scale-110 transform transition-transform"></a>
+                    </div>
+                    <div class="flex mt-2 m-1">
+                        <a href=""><img src="../fuente/iconos/twitter.svg" alt="twitter" class="w-9 h-9 mb-9 hover:scale-110 transform transition-transform"></a>
+                    </div>
+                    <div class="flex mt-2 m-1">
+                        <a href=""><img src="../fuente/iconos/facebook.svg" alt="facebook" class="w-9 h-9 mb-9 hover:scale-110 transform transition-transform"></a>
+                    </div>
+                    <div class="flex mt-2 m-1">
+                        <a href=""><img src="../fuente/iconos/tiktok.svg" alt="tiktok" class="w-9 h-9 mb-9 hover:scale-110 transform transition-transform"></a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </footer>
 </body>
 </html>
