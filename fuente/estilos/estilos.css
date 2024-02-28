@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@200&display=swap');
 
 .scroll-snap-x {
     scroll-snap-type: x mandatory;
@@ -26,10 +27,20 @@
     gap:10px;
 }
 
-.custom-l{
-    left: 90px;
+.fuente-titulos{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
 }
 
-.custom-r{
-    right: 90px;
+.fuente-parrafos{
+    font-family: 'Work Sans', serif;
+    font-style: normal;
+}
+
+.clamp-parrafos{
+   font-size: clamp(1rem, 0.9300rem + 0.3200vw, 1.15rem);
+}
+
+.clamp-titulos{
+    font-size: clamp(1.25rem, 1.2080rem + 0.1920vw, 1.3rem);
 }

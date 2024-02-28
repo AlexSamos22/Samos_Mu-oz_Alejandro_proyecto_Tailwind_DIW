@@ -17,6 +17,11 @@ module.exports = {
         'smd': '690px',
         'mini': '350px',
       },
+      colors:{
+        'color-fondo': '#e4e4e4',
+        'flecha-carrusel': 'rgba(255, 255, 255, 0.5)',
+        'azul-web': '#0177E3'
+      },
       plugins: [],
     }
   }
