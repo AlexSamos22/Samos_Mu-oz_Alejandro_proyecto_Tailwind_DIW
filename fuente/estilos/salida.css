@@ -1074,6 +1074,10 @@ video {
     margin-top: 0px;
   }
 
+  .lx\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lx\:h-28 {
     height: 7rem;
   }
@@ -1096,6 +1100,10 @@ video {
 
   .lx\:items-stretch {
     align-items: stretch;
+  }
+
+  .lx\:text-left {
+    text-align: left;
   }
 }
 
