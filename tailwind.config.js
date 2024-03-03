@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./fuente/**/*.{html,js}"],
+  content: [
+    "./fuente/**/*.{html,js}",
+    "./node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       gridAutoColumns: {
@@ -16,6 +19,7 @@ module.exports = {
         'sg': '800px',
         'smd': '690px',
         'mini': '350px',
+        'footer': '920px'
       },
       colors:{
         'color-fondo': '#e4e4e4',
